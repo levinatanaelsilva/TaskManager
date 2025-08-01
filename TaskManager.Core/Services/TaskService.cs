@@ -18,15 +18,19 @@ namespace TaskManager.Core.Services
 
         public IEnumerable<TaskItem> GetAll() => _repository.GetAll();
 
-        public TaskItem GetById(Guid id) => _repository.GetById(id);
+        public TaskItem GetById(int id) => _repository.GetById(id);
 
         public void Create(string title, string description, TaskPriority priority)
         {
             if (string.IsNullOrWhiteSpace(title))
                 throw new ArgumentException("O título da tarefa é obrigatório.");
 
+            var tasks = _repository.GetAll();
+            var nextId = tasks.Any() ? tasks.Max(t => t.Id) + 1 : 1;
+
             var task = new TaskItem
             {
+                Id = nextId,
                 Title = title,
                 Description = description,
                 Priority = priority,
@@ -37,7 +41,7 @@ namespace TaskManager.Core.Services
             _repository.Add(task);
         }
 
-        public void Update(Guid id, string title, string description, TaskPriority priority, TaskStatus status)
+        public void Update(int id, string title, string description, TaskPriority priority, TaskStatus status)
         {
             var task = _repository.GetById(id);
             if (task == null)
@@ -54,7 +58,7 @@ namespace TaskManager.Core.Services
             _repository.Update(task);
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var task = _repository.GetById(id);
             if (task == null)

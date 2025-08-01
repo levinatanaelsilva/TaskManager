@@ -7,9 +7,9 @@ namespace TaskManager.Core.Interfaces
     public interface ITaskRepository
     {
         IEnumerable<TaskItem> GetAll();
-        TaskItem GetById(Guid id);
+        TaskItem GetById(int id);
         void Add(TaskItem task);
         void Update(TaskItem task);
-        void Delete(Guid id);
+        void Delete(int id);
     }
 }

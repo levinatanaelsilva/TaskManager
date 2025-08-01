@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
 using TaskManager.Core.Entities;
 using TaskManager.Core.Interfaces;
 
@@ -36,7 +35,7 @@ namespace TaskManager.Infrastructure.Repositories
 
         public IEnumerable<TaskItem> GetAll() => _tasks;
 
-        public TaskItem GetById(Guid id) => _tasks.FirstOrDefault(t => t.Id == id);
+        public TaskItem GetById(int id) => _tasks.FirstOrDefault(t => t.Id == id);
 
         public void Add(TaskItem task)
         {
@@ -54,7 +53,7 @@ namespace TaskManager.Infrastructure.Repositories
             }
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var task = GetById(id);
             if (task != null)

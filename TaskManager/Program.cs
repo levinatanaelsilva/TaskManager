@@ -78,7 +78,7 @@ namespace TaskManager.CLI
                         case "3":
                             Console.WriteLine("ALTERAR INFORMAÇÕES DA TAREFA");
                             Console.Write("ID da tarefa: ");
-                            var idUpdate = Guid.Parse(Console.ReadLine());
+                            var idUpdate = int.Parse(Console.ReadLine());
                             Console.Write("Novo título: ");
                             var newTitle = Console.ReadLine();
                             Console.Write("Nova descrição: ");
@@ -95,7 +95,7 @@ namespace TaskManager.CLI
                         case "4":
                             Console.WriteLine("REMOVER TAREFA");
                             Console.Write("ID da tarefa: ");
-                            var idDelete = Guid.Parse(Console.ReadLine());
+                            var idDelete = int.Parse(Console.ReadLine());
                             service.Delete(idDelete);
                             Console.WriteLine("Tarefa removida.");
                             break;
