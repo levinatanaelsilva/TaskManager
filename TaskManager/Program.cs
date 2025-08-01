@@ -31,6 +31,7 @@ namespace TaskManager.CLI
                 Console.WriteLine("4 - Excluir");
                 Console.WriteLine("5 - Filtrar");
                 Console.WriteLine("6 - Sair");
+                Console.WriteLine("7 - Limpar Tela");
                 Console.Write("> ");
                 var input = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(input)) continue;
@@ -121,6 +122,9 @@ namespace TaskManager.CLI
                             {
                                 Console.WriteLine("Comando não reconhecido.");
                             }
+                            break;
+                        case "7":
+                            Console.Clear();
                             break;
 
                         default:
