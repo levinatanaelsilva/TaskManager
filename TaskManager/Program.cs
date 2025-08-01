@@ -19,7 +19,7 @@ namespace TaskManager.CLI
             {
                 if (!first)
                 {
-                    Console.WriteLine("\n\n");
+                    Console.WriteLine("\n");
                 }
                 first = false;
 
@@ -125,6 +125,8 @@ namespace TaskManager.CLI
                             break;
                         case "7":
                             Console.Clear();
+                            Console.WriteLine("Task Manager CLI");
+                            first = true;
                             break;
 
                         default:
