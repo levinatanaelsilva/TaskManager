@@ -45,6 +45,7 @@ namespace TaskManager.CLI
                             return;
 
                         case "1":
+                            Console.WriteLine("INFORMAÇÕES DA NOVA TAREFA");
                             Console.Write("Título: ");
                             var title = Console.ReadLine();
                             Console.Write("Descrição: ");
@@ -57,6 +58,7 @@ namespace TaskManager.CLI
                             break;
 
                         case "2":
+                            Console.WriteLine("LISTA DE TAREFAS CADASTRADAS");
                             var listAll = service.GetAll();
                             if (listAll.Any())
                             {
@@ -73,6 +75,7 @@ namespace TaskManager.CLI
                             break;
 
                         case "3":
+                            Console.WriteLine("ALTERAR INFORMAÇÕES DA TAREFA");
                             Console.Write("ID da tarefa: ");
                             var idUpdate = Guid.Parse(Console.ReadLine());
                             Console.Write("Novo título: ");
@@ -89,6 +92,7 @@ namespace TaskManager.CLI
                             break;
 
                         case "4":
+                            Console.WriteLine("REMOVER TAREFA");
                             Console.Write("ID da tarefa: ");
                             var idDelete = Guid.Parse(Console.ReadLine());
                             service.Delete(idDelete);
@@ -96,6 +100,7 @@ namespace TaskManager.CLI
                             break;
 
                         case "5":
+                            Console.WriteLine("BUSCA POR TAREFA");
                             Console.Write("Filtrar por (1-Status / 2-Prioridade): ");
                             var type = Console.ReadLine();
                             if (type == "1")
