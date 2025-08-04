@@ -78,12 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\JsonTaskRepository.cs" />
+    <Compile Include="Repositories\JsonTarefaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskManager.Core\TaskManager.Core.csproj">
+    <ProjectReference Include="..\TaskManager.Core\GestaoTarefas.Core.csproj">
       <Project>{742859A9-AD8F-42F1-B2B4-4C6E7E3B3E1C}</Project>
-      <Name>TaskManager.Core</Name>
+      <Name>GestaoTarefas.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

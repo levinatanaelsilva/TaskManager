@@ -1,6 +1,6 @@
-﻿namespace TaskManager.Core.Enums
+﻿namespace GestaoTarefas.Core.Enums
 {
-    public enum TaskStatus
+    public enum TarefaStatus
     {
         Pendente = 1,
         Iniciada,

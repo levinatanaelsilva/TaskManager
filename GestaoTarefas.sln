@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.35706.149
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager", "TaskManager\TaskManager.csproj", "{3F2E227A-4634-435D-B507-39DB1F3D44E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTarefas", "TaskManager\GestaoTarefas.csproj", "{3F2E227A-4634-435D-B507-39DB1F3D44E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Core", "TaskManager.Core\TaskManager.Core.csproj", "{742859A9-AD8F-42F1-B2B4-4C6E7E3B3E1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTarefas.Core", "TaskManager.Core\GestaoTarefas.Core.csproj", "{742859A9-AD8F-42F1-B2B4-4C6E7E3B3E1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Infrastructure", "TaskManager.Infrastructure\TaskManager.Infrastructure.csproj", "{F33370C6-3032-4806-9C51-4EE55914A640}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTarefas.Infra", "TaskManager.Infrastructure\GestaoTarefas.Infra.csproj", "{F33370C6-3032-4806-9C51-4EE55914A640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.CLI", "TaskManager.CLI\TaskManager.CLI.csproj", "{AFF920FC-D5C7-40AD-BEF4-170ADD2CAA9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTarefas.CLI", "TaskManager.CLI\GestaoTarefas.CLI.csproj", "{AFF920FC-D5C7-40AD-BEF4-170ADD2CAA9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Tests", "TaskManager.Tests\TaskManager.Tests.csproj", "{0083455F-49EF-40AB-80D2-A5C6E59022C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTarefas.Tests", "TaskManager.Tests\GestaoTarefas.Tests.csproj", "{0083455F-49EF-40AB-80D2-A5C6E59022C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
