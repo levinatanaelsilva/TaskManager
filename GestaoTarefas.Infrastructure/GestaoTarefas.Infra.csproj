@@ -81,7 +81,7 @@
     <Compile Include="Repositories\JsonTarefaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskManager.Core\GestaoTarefas.Core.csproj">
+    <ProjectReference Include="..\GestaoTarefas.Core\GestaoTarefas.Core.csproj">
       <Project>{742859A9-AD8F-42F1-B2B4-4C6E7E3B3E1C}</Project>
       <Name>GestaoTarefas.Core</Name>
     </ProjectReference>
